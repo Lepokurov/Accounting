@@ -1,16 +1,41 @@
-# Environment
 .env
 *.env
+.env.*
+.envrc
 
-# Virtual environment
+# Virtual environments
 .venv/
+venv/
 
 # Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
 
-# Alembic
-alembic/versions/*.pyc
+# IDEs / editors
+.idea/
+*.iml
+.vscode/
 
-# Misc
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage / test / tooling caches
+.coverage*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Builds / dists
+build/
+dist/
+*.egg-info/
+
+# Logs
 *.log
+
+# Alembic temporary bytecode
+alembic/versions/*.pyc
+# (Keep migration .py files tracked)
+# Environment
